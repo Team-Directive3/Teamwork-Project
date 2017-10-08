@@ -42,7 +42,7 @@ export const APP_ROUTES: Routes = [
 
     { path: 'projects', component: ViewProjectsComponent },
     { path: 'projects/create', component: ProjectCreateComponent },
-    { path: 'projects/update/:id', component: ProjectUpdateComponent },
+    { path: 'projects/update/:id', component: ProjectUpdateComponent, canActivate:[false] },
     { path: 'projects/remove/:id', component: ProjectRemoveComponent },
     { path: 'projects/:id', component: ProjectDetailsComponent },
 
